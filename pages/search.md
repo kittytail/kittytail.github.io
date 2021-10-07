@@ -2,7 +2,8 @@
 layout: search
 title: Search
 permalink: /search/
-subtitle: "What are you looking for?"
+subtitle: "ページ内検索"
 feature-img: "assets/img/pexels/search-map.jpeg"
 icon: "fa-search"
+hide: true
 ---
