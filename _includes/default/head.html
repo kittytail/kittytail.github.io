@@ -52,25 +52,6 @@
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
 
-    <!-- Google Analytics / Cookie Consent -->
-    <script>
-      const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
-      const isCookieConsent = '{{ site.cookie_consent }}';
-      const analyticsName = '{{ site.google_analytics }}';
-    </script>
-
-    {% if site.cookie_consent %}
-        <span id="cookie-notice"><span>{{ site.data.language.str_cookie_disclaimer | default: "We would like to use third party cookies and scripts to improve the functionality of this website." }}
-          </span><a id="cookie-notice-accept" class="button">{{ site.data.language.str_cookie_approve | default: "Approve" }}</a>
-        </span>
-    {% endif %}
-    {% if site.google_analytics %}
-        <!-- Global site tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-        <!-- Page analysis (analytics.js) -->
-        <script async src='https://www.google-analytics.com/analytics.js'></script>
-    {% endif %}
-
     <!-- seo tags -->
     <meta property="og:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
     {% unless page.layout == post %}

@@ -137,15 +137,6 @@ You can find all the properties in `_data/language.yml`.
 
 By default, it is in english, but you can easily add your own language.
 
-### Google Analytics
-
-To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385) 
-to `_config.yml` like so:
-
-```yml
-google_analytics: UA-NNNNNNNN-N
-```
-
 ### Comments 💬
 
 #### Disqus
@@ -245,12 +236,6 @@ The site icons come from [Font Awesome](https://fontawesome.com/).
 
 In `_data/icons.yml` you can set the footer icon that will appear at the bottom of the page.
 They will redirect the user on your profile on the other platform like Twitter, GitHub and so many more!
-
-### Cookie consent
-
-You can add a cookie consent with a disclaimer if you use Google Analytics while respecting the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
-Set to true, there will be a banner at the bottom of the page with the disclaimer, and an _approve_ button.
-Once the user clicks on "Approve" the cookies will be created for Google Analytics.
 
 #### Share in article
 
