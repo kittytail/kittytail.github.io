@@ -5,8 +5,8 @@ url: "https://nekoblocker.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: NekoBlocker                                      # site's title
 description: "NekoBlocker 公式ホームページ"       # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+avatar: assets/img/neko-blocker-icon-180x180.png  # Empty for no avatar in navbar
+favicon:                              # Icon displayed in the tab
 
 # Header and footer text
 header_text: 最新ニュース                               # Change Blog header text
