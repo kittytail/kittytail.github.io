@@ -5870,7 +5870,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".single_block_label:has-text()"
+      "selector":".single_block_label:has-text(ピックアップ)"
     }
   },
   {
@@ -7497,7 +7497,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".sidewrapper:has(h4:has-text())"
+      "selector":".sidewrapper:has(h4:has-text(おすすめ))"
     }
   },
   {
@@ -10104,7 +10104,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#article-options > h3:first-child:has-text()"
+      "selector":"#article-options > h3:first-child:has-text(他サイト様)"
     }
   },
   {
@@ -10673,7 +10673,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"h3.title:has-text()"
+      "selector":"h3.title:has-text(おすすめ記事)"
     }
   },
   {
@@ -10854,7 +10854,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#content > .sidetitle:has-text()"
+      "selector":"#content > .sidetitle:has-text(他サイトの)"
     }
   },
   {
@@ -10926,7 +10926,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".left-container > .plugin-memo:has-text()"
+      "selector":".left-container > .plugin-memo:has-text(ブログランキング)"
     }
   },
   {
@@ -11541,7 +11541,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"ul > .sidebartitle:has(img[alt=\"\"])"
+      "selector":"ul > .sidebartitle:has(img[alt=\"オススメサイト\"])"
     }
   },
   {
@@ -11897,7 +11897,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".article_body > h3:has-text()"
+      "selector":".article_body > h3:has-text(記事)"
     }
   },
   {
@@ -12104,7 +12104,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#body-in > .menu_title3:has-text(/|/)"
+      "selector":"#body-in > .menu_title3:has-text(/ヘッドライン|ピックアップ/)"
     }
   },
   {
@@ -12232,12 +12232,24 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
+        "*kaigai-matome.net"
+      ]
+    },
+    "action":{
+      "type":"css-display-none",
+      "selector":".blogrolls"
+    }
+  },
+  {
+    "trigger":{
+      "url-filter":".*",
+      "if-domain":[
         "*kanasoku.info"
       ]
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#headrank2:has-text(/Pickup|/)"
+      "selector":"#headrank2:has-text(/Pickup|オススメ/)"
     }
   },
   {
@@ -12297,7 +12309,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".ently_text > b:has-text()"
+      "selector":".ently_text > b:has-text(オススメ記事)"
     }
   },
   {
@@ -13274,7 +13286,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#article-body > h3:not(:has-text(RT))"
+      "selector":"#article-body > h3:not(:has-text(RTランキング))"
     }
   },
   {
@@ -13867,7 +13879,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".section-title-wrapper:has-text()"
+      "selector":".section-title-wrapper:has-text(他サイト)"
     }
   },
   {
@@ -14097,7 +14109,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".entry-body > b:has-text()"
+      "selector":".entry-body > b:has-text(新着記事)"
     }
   },
   {
@@ -14362,7 +14374,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#more > span:has-text()"
+      "selector":"#more > span:has-text(新着記事)"
     }
   },
   {
@@ -15626,7 +15638,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".comment11 > h4:has-text()"
+      "selector":".comment11 > h4:has-text(今)"
     }
   },
   {
@@ -15638,7 +15650,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"ifarticlebodymore > h4:has-text()"
+      "selector":"ifarticlebodymore > h4:has-text(注目記事)"
     }
   },
   {
@@ -15927,7 +15939,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#main > .column-inner > h4:has-text()"
+      "selector":"#main > .column-inner > h4:has-text(ページランキング)"
     }
   },
   {
@@ -15939,7 +15951,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".article-outer-3 > h3:has-text()"
+      "selector":".article-outer-3 > h3:has-text(よく読まれている記事)"
     }
   },
   {
@@ -16191,7 +16203,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".hentry.status-publish > .clearfix > .box01 + h2:has-text()"
+      "selector":".hentry.status-publish > .clearfix > .box01 + h2:has-text(おすすめ電話)"
     }
   },
   {
@@ -16203,7 +16215,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".article-main > h3:has-text()"
+      "selector":".article-main > h3:has-text(記事)"
     }
   },
   {
@@ -16359,7 +16371,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#main > h2:has-text()"
+      "selector":"#main > h2:has-text(オススメ)"
     }
   },
   {
@@ -16683,7 +16695,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#main-contents > h2:has-text(/|RSS|/)"
+      "selector":"#main-contents > h2:has-text(/【極秘】|RSS|管理人/)"
     }
   },
   {
@@ -17440,7 +17452,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"h2.caption-title:has-text()"
+      "selector":"h2.caption-title:has-text(おすすめ記事)"
     }
   },
   {
@@ -18520,7 +18532,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".plugin1_outline:has-text()"
+      "selector":".plugin1_outline:has-text(人気サイト)"
     }
   },
   {
@@ -19733,7 +19745,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"^.plugin1_outline:has-text()"
+      "selector":"^.plugin1_outline:has-text(人気サイト)"
     }
   },
   {
@@ -19995,6 +20007,18 @@
     "action":{
       "type":"css-display-none",
       "selector":"#article_head_v2 + #lite_link"
+    }
+  },
+  {
+    "trigger":{
+      "url-filter":".*",
+      "if-domain":[
+        "*doujin-dolci.com"
+      ]
+    },
+    "action":{
+      "type":"css-display-none",
+      "selector":"#enhancedtextwidget-5"
     }
   },
   {

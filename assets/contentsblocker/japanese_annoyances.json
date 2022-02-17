@@ -1834,7 +1834,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"li.newsFeed_item > div:has-text()"
+      "selector":"li.newsFeed_item > div:has-text(あなたの興味や関心)"
     }
   },
   {
@@ -1991,7 +1991,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=\"position: absolute;\"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text():upward(5)"
+      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=\"position: absolute;\"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)"
     }
   },
   {
@@ -2027,7 +2027,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".callout-container--bottom-left:has(.callout-content-title:has-text())"
+      "selector":".callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))"
     }
   },
   {
@@ -2039,7 +2039,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text())"
+      "selector":".maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))"
     }
   },
   {
@@ -2113,7 +2113,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".ytd-popup-container[style_=\"BUBBLE_HINT_STYLE_BLUE_TOOLTIP\"] #details-text > yt-formatted-string:has-text():upward(.ytd-popup-container)"
+      "selector":".ytd-popup-container[style_=\"BUBBLE_HINT_STYLE_BLUE_TOOLTIP\"] #details-text > yt-formatted-string:has-text(このチャンネルのメンバーシップを購入すると):upward(.ytd-popup-container)"
     }
   },
   {
@@ -2125,7 +2125,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"ytd-popup-container > .ytd-popup-container[style^=\"outline: currentcolor\"][force-close-on-outside-click=true] #details-text:has-text():upward(.ytd-popup-container[force-close-on-outside-click=true])"
+      "selector":"ytd-popup-container > .ytd-popup-container[style^=\"outline: currentcolor\"][force-close-on-outside-click=true] #details-text:has-text(このチャンネルのメンバーになると):upward(.ytd-popup-container[force-close-on-outside-click=true])"
     }
   },
   {
@@ -7888,7 +7888,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text())"
+      "selector":".ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))"
     }
   },
   {
@@ -7900,7 +7900,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text())"
+      "selector":".notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))"
     }
   },
   {
@@ -9502,7 +9502,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"body[style$=\"overflow: hidden;\"] > div[class^=MuiDialog-root-][elevation]:has(h6.text-break-all:has-text( ))"
+      "selector":"body[style$=\"overflow: hidden;\"] > div[class^=MuiDialog-root-][elevation]:has(h6.text-break-all:has-text(＼ おてつたびへようこそ！／))"
     }
   },
   {
@@ -9682,7 +9682,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[style=\"visibility: visible; top: 80px; left: 99px;\"]:has-text()"
+      "selector":"div[style=\"visibility: visible; top: 80px; left: 99px;\"]:has-text(探したい)"
     }
   },
   {
@@ -10595,7 +10595,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[class^=_][style=\"background-color: white;\"] button.primary:has-text():upward(5):matches-css(overflow: auto)"
+      "selector":"div[class^=_][style=\"background-color: white;\"] button.primary:has-text(今すぐチェック):upward(5):matches-css(overflow: auto)"
     }
   },
   {
@@ -10607,7 +10607,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[class^=_][style^=\"position: fixed; inset: auto\"] span:has-text():upward(4):matches-css(width: 360px)"
+      "selector":"div[class^=_][style^=\"position: fixed; inset: auto\"] span:has-text(でのご予約はいかがでしたか？):upward(4):matches-css(width: 360px)"
     }
   },
   {
@@ -10823,7 +10823,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#main > div[data-reactroot] > div[class^=_]:has-text()"
+      "selector":"#main > div[data-reactroot] > div[class^=_]:has-text(アップロード、)"
     }
   },
   {
@@ -11028,7 +11028,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#upsell-home-modal:has(.confirm-button:has-text(/Business |/))"
+      "selector":"#upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))"
     }
   },
   {
@@ -15073,7 +15073,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[data-pagelet*=\"FeedUnit\"]:has-text(/Suggested for You|/)"
+      "selector":"div[data-pagelet*=\"FeedUnit\"]:has-text(/Suggested for You|おすすめの投稿/)"
     }
   },
   {
@@ -15241,7 +15241,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".main-column-inner > span:has-text()"
+      "selector":".main-column-inner > span:has-text(おすすめ)"
     }
   },
   {
@@ -15421,7 +15421,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"aside[aria-label=]:upward(1)"
+      "selector":"aside[aria-label=おすすめユーザー]:upward(1)"
     }
   },
   {
@@ -15433,7 +15433,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
+      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
     }
   },
   {
@@ -15445,7 +15445,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"]  > div > div[style^=transform] div[aria-label^=][role=button] > div > span > span:upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"]  > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
     }
   },
   {
@@ -15457,7 +15457,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
     }
   },
   {
@@ -15469,7 +15469,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
+      "selector":"div[aria-label=\"タイムライン: 話題を検索\"] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
     }
   },
   {
@@ -15481,7 +15481,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] div[aria-label^=][role=button] > div > span > span:upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: 話題を検索\"] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
     }
   },
   {
@@ -15493,7 +15493,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: 話題を検索\"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
     }
   },
   {
@@ -15505,7 +15505,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
     }
   },
   {
@@ -15517,7 +15517,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] div[aria-label^=][role=button] > div > span > span:upward(div[style^=transform])"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
     }
   },
   {
@@ -15529,7 +15529,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
     }
   },
   {
@@ -15541,7 +15541,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] h2 > div[style^=-webkit] > span:has-text():upward(div[aria-label=\": \"])"
+      "selector":"div[aria-label=\"タイムライン: \"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[aria-label=\"タイムライン: \"])"
     }
   },
   {
@@ -15553,7 +15553,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] > div > a[href^=\"/i/topics/picker/home\"]"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div > a[href^=\"/i/topics/picker/home\"]"
     }
   },
   {
@@ -15565,7 +15565,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] > div[class^=css]:only-child > div[class^=css]:only-child:empty"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div[class^=css]:only-child > div[class^=css]:only-child:empty"
     }
   },
   {
@@ -15577,7 +15577,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] div[data-testid=ScrollSnap-SwipeableList]:has(div[aria-label^=][aria-label$=])"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[data-testid=ScrollSnap-SwipeableList]:has(div[aria-label^=トピック「][aria-label$=をフォロー])"
     }
   },
   {
@@ -15589,7 +15589,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=][aria-label$=] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^=transform])"
     }
   },
   {
@@ -15601,7 +15601,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] > div > a[href=\"/i/lists/suggested\"]"
+      "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] > div > a[href=\"/i/lists/suggested\"]"
     }
   },
   {
@@ -15613,7 +15613,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] > div > a[href^=\"/i/lists/\"] div[role=button] > div > span > span:upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] > div > a[href^=\"/i/lists/\"] div[role=button] > div > span > span:upward(div[style^=transform])"
     }
   },
   {
@@ -15625,7 +15625,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^=transform])"
     }
   },
   {
@@ -15637,7 +15637,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\": \"] > div > div[style^=transform] h1 > span:has-text():upward(div[style^=transform])"
+      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] h1 > span:has-text(プッシュ通知):upward(div[style^=transform])"
     }
   },
   {
@@ -15808,7 +15808,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#m_news_feed_stream article:has-text(/Suggested for You|/)"
+      "selector":"#m_news_feed_stream article:has-text(/Suggested for You|おすすめの投稿/)"
     }
   },
   {
@@ -17347,7 +17347,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".osusume > .pickup-list > li.item .title:has-text(PR):upward(li)"
+      "selector":".osusume > .pickup-list > li.item .title:has-text(【PR):upward(li)"
     }
   },
   {
@@ -18431,6 +18431,7 @@
         "*imgkane.buzz",
         "*imgkia.*",
         "*imgklx.xyz",
+        "*imgkoc.buzz",
         "*imgkoka.buzz",
         "*imgkuiw.xyz",
         "*imglina.xyz",
