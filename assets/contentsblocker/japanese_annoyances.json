@@ -12,6 +12,24 @@
   },
   {
     "trigger":{
+      "url-filter":".*"
+    },
+    "action":{
+      "type":"css-display-none",
+      "selector":"#gdpr-banner"
+    }
+  },
+  {
+    "trigger":{
+      "url-filter":"stackoverflow.com"
+    },
+    "action":{
+      "type":"css-display-none",
+      "selector":".js-consent-banner"
+    }
+  },
+  {
+    "trigger":{
       "url-filter":".*",
       "if-domain":[
         "*sukima.me"
