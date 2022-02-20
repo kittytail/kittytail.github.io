@@ -52,18 +52,6 @@
   },
   {
     "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*comic.pixiv.net"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".fixed.my-0.mx-auto.rounded-8 > div > a[href$=\"/1108\"]:upward(2)"
-    }
-  },
-  {
-    "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?itmedia\\.co\\.jp\\/pcuser\\/images\\/htmlgen\\/articleHeader_images_2_1529891570\\.png"
     },
     "action":{
@@ -1678,18 +1666,6 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"a[data-target=clientDownload]:upward(3)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*drive.google.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"body > [aria-labelledby$=\".afp\"]"
     }
   },
@@ -1769,18 +1745,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*mail.yahoo.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".main > div[class] > div[class] > a[href=\"https://yahoo.jp/lh-W_L\"][title=\"\"][font-size=\"14\"]:upward(2)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*mrs.living.jp"
       ]
     },
@@ -1823,18 +1787,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".__tbsLive.md-notificationItem"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*news.yahoo.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"li.newsFeed_item > div:has-text(あなたの興味や関心)"
     }
   },
   {
@@ -1986,18 +1938,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=\"position: absolute;\"] > div > div > div > div[role=button] > div[dir=auto] > span > span:has-text(通知をオンにする):upward(5)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*w3q.jp"
       ]
     },
@@ -2016,30 +1956,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"#tubiaWalkthroughNotification"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*www.dropbox.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".callout-container--bottom-left:has(.callout-content-title:has-text(編集しますか？))"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*www.dropbox.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".maestro-secondary-sidebar:has(.continuous-onboarding__heading__text:has-text(新しいおすすめ))"
     }
   },
   {
@@ -2102,30 +2018,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".ytp-cards-teaser"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*youtube.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".ytd-popup-container[style_=\"BUBBLE_HINT_STYLE_BLUE_TOOLTIP\"] #details-text > yt-formatted-string:has-text(このチャンネルのメンバーシップを購入すると):upward(.ytd-popup-container)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*youtube.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"ytd-popup-container > .ytd-popup-container[style^=\"outline: currentcolor\"][force-close-on-outside-click=true] #details-text:has-text(このチャンネルのメンバーになると):upward(.ytd-popup-container[force-close-on-outside-click=true])"
     }
   },
   {
@@ -2312,6 +2204,28 @@
   {
     "trigger":{
       "resource-type":[
+        "document",
+        "image",
+        "script",
+        "font",
+        "raw",
+        "svg-document",
+        "media",
+        "popup",
+        "ping",
+        "fetch",
+        "websocket",
+        "other"
+      ],
+      "url-filter":"\\/wp\\-content\\/plugins\\/popup\\-maker\\/.*"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "resource-type":[
         "script"
       ],
       "load-type":[
@@ -2374,6 +2288,31 @@
   },
   {
     "trigger":{
+      "resource-type":[
+        "fetch"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?fspark\\-ap\\.com\\/ft\\/pvt"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "load-type":[
+        "third-party"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?go\\.pardot\\.com[\\/:&?]?"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
       "load-type":[
         "third-party"
       ],
@@ -2402,6 +2341,17 @@
   {
     "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?lb\\.benchmarkemail\\.com[\\/:&?]?"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "resource-type":[
+        "fetch"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?ocnk\\-popup\\.net[\\/:&?]?"
     },
     "action":{
       "type":"block"
@@ -2979,6 +2929,20 @@
   },
   {
     "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "if-domain":[
+        "www.bbc.com"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?buy\\.tinypass\\.com\\/checkout\\/template\\/cacheableShow\\?.*&displayMode=modal&widget=template"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
       "url-filter":".*",
       "if-domain":[
         "*bbc.com"
@@ -2999,6 +2963,23 @@
     "action":{
       "type":"css-display-none",
       "selector":"body.tp-modal-open:style(overflow: auto !important;)"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "load-type":[
+        "third-party"
+      ],
+      "if-domain":[
+        "thehindu.com"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?buy\\.tinypass\\.com\\/checkout\\/template\\/cacheableShow\\?.*&iframeId=offer_.*&displayMode=modal&pianoIdUrl=https%3A%2F%2Fid\\.tinypass\\.com%2Fid%2F&widget=template"
+    },
+    "action":{
+      "type":"block"
     }
   },
   {
@@ -3524,6 +3505,17 @@
     "action":{
       "type":"css-display-none",
       "selector":".tape"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?d\\-gogo\\.com\\/apps\\/automizely\\-messages\\/layers\\/popup\\-bars\\/"
+    },
+    "action":{
+      "type":"block"
     }
   },
   {
@@ -4429,6 +4421,20 @@
   },
   {
     "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "load-type":[
+        "first-party"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?ikimonomatometyou\\.com[\\/:&?]?"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?inbound\\-pro\\.com\\/assets\\/toastr\\-"
     },
     "action":{
@@ -4871,18 +4877,6 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":".mfp-wrap div#emailSignupPopup:upward(.mfp-wrap)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*matchesfashion.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":".mfp-bg"
     }
   },
@@ -5154,6 +5148,20 @@
     "action":{
       "type":"css-display-none",
       "selector":".mm-bannner"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "resource-type":[
+        "image"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?netads\\.makino9213\\.work\\/lp\\/exitpop"
+    },
+    "action":{
+      "type":"block"
     }
   },
   {
@@ -5590,18 +5598,6 @@
   },
   {
     "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*rebates.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#overlayContent:upward(1)"
-    }
-  },
-  {
-    "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?receptionist\\.jp[\\/:&?]?.*\\/top_banner\\.png"
     },
     "action":{
@@ -5955,6 +5951,17 @@
   {
     "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?sm\\.r10s\\.jp\\/contents\\/static\\/event\\/popup\\/"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?smith\\-wesson\\.com\\/popup\\-front"
     },
     "action":{
       "type":"block"
@@ -6532,18 +6539,6 @@
   },
   {
     "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*auctions.yahoo.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"section[class^=\"Component-sc\"] > a[class*=\"-sc-\"][data-ylk^=\"rsec:prmdl\"]:upward(1)"
-    }
-  },
-  {
-    "trigger":{
       "resource-type":[
         "image"
       ],
@@ -6787,19 +6782,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"body[style=\"overflow: hidden;\"]:style(overflow: auto!important;)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*anthropologie.com",
-        "*urbanoutfitters.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#modal form#email-sign-up-form:upward(#modal)"
     }
   },
   {
@@ -7069,18 +7051,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".p-following"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*blackview.hk"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".mfp-wrap.mfp-close-btn-in form.js_mail_agree:upward(.mfp-wrap)"
     }
   },
   {
@@ -7604,36 +7574,12 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*developer.android.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"devsite-snackbar a.devsite-snackbar-link[href^=\"https://developer.android.com/survey\"]:upward(devsite-snackbar)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*developer.mozilla.org"
       ]
     },
     "action":{
       "type":"css-display-none",
       "selector":".notification:has(a[href^=\"https://www.surveygizmo\"])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*deviantart.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#root > header ~ div[class] > span.theme-light > a[href$=\"/users/login\"]:upward(header ~ div[class])"
     }
   },
   {
@@ -7877,30 +7823,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"#pitari_mcw_flt"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*evernote.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".ReactModalPortal:has(#qa-GENERIC_LIGHTBOX_DIALOG_SUBMIT p[class^=_]:has-text(無料でお試し))"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*evernote.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".notifications-wrapper + div + div[class^=_] > div[class^=_]:has(div[class^=_] > span[class]:has-text(無料でお試し！))"
     }
   },
   {
@@ -8748,18 +8670,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*kuih.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#popupBox > div > div.popup-inner-bottom > a.go-to-register:upward(3)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*kurumaerabi.com"
       ]
     },
@@ -9078,18 +8988,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"#sci-slide"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*mobile.twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[data-testid=\"sidebarColumn\"] section[aria-label][role=\"region\"]:upward(1)"
     }
   },
   {
@@ -9502,18 +9400,6 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"body[style$=\"overflow: hidden;\"] > div[class^=MuiDialog-root-][elevation]:has(h6.text-break-all:has-text(＼ おてつたびへようこそ！／))"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*otetsutabi.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"body[style$=\"overflow: hidden;\"]:style(overflow: auto!important)"
     }
   },
@@ -9551,18 +9437,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".popup-box.-pro"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*paypay.ne.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".is-modalContentsShow a.bannerModal__link[href^=\"https://paypay.ne.jp/event/\"][data-eventaction]:upward(.is-modalContentsShow)"
     }
   },
   {
@@ -9671,18 +9545,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"div[data-test-id=\"giftWrap\"]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*pinterest.*"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[style=\"visibility: visible; top: 80px; left: 99px;\"]:has-text(探したい)"
     }
   },
   {
@@ -10590,30 +10452,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*tripadvisor.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[class^=_][style=\"background-color: white;\"] button.primary:has-text(今すぐチェック):upward(5):matches-css(overflow: auto)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*tripadvisor.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[class^=_][style^=\"position: fixed; inset: auto\"] span:has-text(でのご予約はいかがでしたか？):upward(4):matches-css(width: 360px)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*try-it.jp"
       ]
     },
@@ -10770,18 +10608,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*video.fc2.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"a[href^=\"http://fc2information\"][data-link][style]:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*video.tv-tokyo.co.jp"
       ]
     },
@@ -10812,18 +10638,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"*:style(opacity: 1 !important;)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*vimeo.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#main > div[data-reactroot] > div[class^=_]:has-text(アップロード、)"
     }
   },
   {
@@ -11017,18 +10831,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"#marketingbar"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*www.dropbox.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#upsell-home-modal:has(.confirm-button:has-text(/Business をお試し|アプリをダウンロード/))"
     }
   },
   {
@@ -11294,18 +11096,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*blog.hubspot.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#slidebox > .hs-cta-wrapper:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*buzip.net"
       ]
     },
@@ -11487,18 +11277,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"^.egg-section"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*blog.hubspot.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"^#slidebox > .hs-cta-wrapper:upward(1)"
     }
   },
   {
@@ -12560,6 +12338,34 @@
   },
   {
     "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "if-domain":[
+        "kyobun.co.jp"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?buy\\-ap\\.piano\\.io\\/checkout\\/offer\\/show\\?displayMode=.*&showCloseButton=false.*&url=https%3A%2F%2Fwww\\.kyobun\\.co\\.jp%2Fnews%"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "if-domain":[
+        "www.japantimes.co.jp"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?buy\\-ap\\.piano\\.io\\/checkout\\/offer\\/show\\?displayMode=.*&showCloseButton=false.*&hasLoginRequiredCallback=true"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
       "url-filter":".*",
       "if-domain":[
         "*japantimes.co.jp"
@@ -12919,6 +12725,20 @@
     "action":{
       "type":"css-display-none",
       "selector":".news_letter"
+    }
+  },
+  {
+    "trigger":{
+      "load-context":[
+        "child-frame"
+      ],
+      "load-type":[
+        "first-party"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?go\\.techblitz\\.com\\/l\\/"
+    },
+    "action":{
+      "type":"block"
     }
   },
   {
@@ -13378,7 +13198,10 @@
   },
   {
     "trigger":{
-      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?vector\\.co\\.jp\\/img_cache\\/tq\\/p\\/service\\/dm\\/"
+      "resource-type":[
+        "fetch"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?udemy\\.benesse\\.co\\.jp\\/course"
     },
     "action":{
       "type":"block"
@@ -13386,14 +13209,10 @@
   },
   {
     "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*vector.co.jp"
-      ]
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?vector\\.co\\.jp\\/img_cache\\/tq\\/p\\/service\\/dm\\/"
     },
     "action":{
-      "type":"css-display-none",
-      "selector":"table > tbody  > tr > td[align=center] > a[href$=\"/regist.cgi\"]:upward(table)"
+      "type":"block"
     }
   },
   {
@@ -14151,18 +13970,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*stackexchange.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".js-dismissable-hero:has-text(Sign up)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*stream.co.jp"
       ]
     },
@@ -14494,6 +14301,28 @@
   {
     "trigger":{
       "url-filter":"\\/plugins\\/yuzo\\-related\\-post\\/.*"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "resource-type":[
+        "document",
+        "image",
+        "script",
+        "font",
+        "raw",
+        "svg-document",
+        "media",
+        "popup",
+        "ping",
+        "fetch",
+        "websocket",
+        "other"
+      ],
+      "url-filter":"\\/wp\\-content\\/plugins\\/futura\\/.*"
     },
     "action":{
       "type":"block"
@@ -14971,30 +14800,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*crank-in.net"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".right_in [id^=_popIn_trend]:upward(.right_in)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*crank-in.net"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"section .uz-ny:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*cs.myjcom.jp"
       ]
     },
@@ -15062,18 +14867,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".linkaff"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*facebook.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[data-pagelet*=\"FeedUnit\"]:has-text(/Suggested for You|おすすめの投稿/)"
     }
   },
   {
@@ -15236,18 +15029,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*moyugenn.youblog.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".main-column-inner > span:has-text(おすすめ)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*news.mynavi.jp"
       ]
     },
@@ -15278,18 +15059,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"#custom_html-5"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*oricon.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".cont-news-full > aside.block-recommend-list.wid80 > h3#related_musicstore_links:upward(1)"
     }
   },
   {
@@ -15421,43 +15190,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"aside[aria-label=おすすめユーザー]:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"]  > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
     }
   },
   {
@@ -15481,67 +15214,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: 話題を検索\"] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: 話題を検索\"] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] > div > a[href^=\"/i/connect_people?\"]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] div[aria-label^=フォロー][role=button] > div > span > span:upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=\"-webkit\"] > span:has-text(おすすめユーザー):upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: \"] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[aria-label=\"タイムライン: \"])"
     }
   },
   {
@@ -15589,55 +15262,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"div[aria-label^=タイムライン][aria-label$=さんのツイート] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(おすすめトピック):upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] > div > a[href=\"/i/lists/suggested\"]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] > div > a[href^=\"/i/lists/\"] div[role=button] > div > span > span:upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: 自分のリスト\"] > div > div[style^=transform] h2 > div[style^=-webkit] > span:has-text(新しいリストを見つける):upward(div[style^=transform])"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[aria-label=\"タイムライン: ホームタイムライン\"] > div > div[style^=transform] h1 > span:has-text(プッシュ通知):upward(div[style^=transform])"
     }
   },
   {
@@ -15808,44 +15433,7 @@
     },
     "action":{
       "type":"css-display-none",
-      "selector":"#m_news_feed_stream article:has-text(/Suggested for You|おすすめの投稿/)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*m.facebook.com",
-        "*mobile.facebook.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
       "selector":"article[data-xt*=\"originated_from_recommendation\"]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*news.2chblog.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#resid1 > div > div:last-child > span[style=\"font-size: 100%;\"]:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*automesseweb.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#_popIn_ranking:upward(.code_php_in_widget)"
     }
   },
   {
@@ -16279,18 +15867,6 @@
   },
   {
     "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*gamewith.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".walkthrough-recruit-banner:upward(1)"
-    }
-  },
-  {
-    "trigger":{
       "if-domain":[
         "gurutabi.gnavi.co.jp"
       ],
@@ -16311,6 +15887,17 @@
   {
     "trigger":{
       "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?gooday\\.nikkei\\.co\\.jp\\/images\\/campaign\\/"
+    },
+    "action":{
+      "type":"block"
+    }
+  },
+  {
+    "trigger":{
+      "resource-type":[
+        "fetch"
+      ],
+      "url-filter":"^[htpsw]+:\\/\\/([a-z0-9-]+\\.)?google\\..*\\/async\\/promos\\?"
     },
     "action":{
       "type":"block"
@@ -16607,18 +16194,6 @@
     },
     "action":{
       "type":"block"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*news.biglobe.ne.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#right-side-inner > .bnr > div > a[onclick]:upward(2)"
     }
   },
   {
@@ -17186,18 +16761,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*anna-media.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".home.column3-list li .icon-pr:upward(li)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*answers.microsoft.com"
       ]
     },
@@ -17270,18 +16833,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*cyclist.sanspo.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#latest-news .sponsored:upward(li)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*felia.373news.com"
       ]
     },
@@ -17342,30 +16893,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*inside-games.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".osusume > .pickup-list > li.item .title:has-text(【PR):upward(li)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*j-town.net"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"aside.section_content > .section_title > .pr-list:upward(2)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*last.fm"
       ]
     },
@@ -17402,18 +16929,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*mag.app-liv.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".topics-parts-container li .topics-article-title:has-text([AD]):upward(li)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*mail.yahoo.co.jp"
       ]
     },
@@ -17426,48 +16941,12 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*mdpr.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"article.list-text .heading-a__pr:upward(article)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*mypage.sso.biglobe.ne.jp"
       ]
     },
     "action":{
       "type":"css-display-none",
       "selector":".pr-main-guidance"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*news.livedoor.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".topicsList > li > i.pr:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*nikkei.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"div[class^=\"adsArea_\"] > section > div > div[class^=\"__item_\"] img[alt=\"PR\"]:upward(div[class^=\"__item_\"]):remove()"
     }
   },
   {
@@ -17534,18 +17013,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*smartagri-jp.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".relatedPosts > ul > .pc .pr:upward(.pc)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*sankei.com"
       ]
     },
@@ -17576,18 +17043,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".alert-banner"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*sportiva.shueisha.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".block-widget-a-a__article__pr:upward(li.block-widget-a-a__article)"
     }
   },
   {
@@ -17630,18 +17085,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*techtarget.itmedia.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".cbox > .vendorcontents:upward(1)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*video.fc2.com"
       ]
     },
@@ -17678,36 +17121,12 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*asajo.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".choice-entry-content .pr-icon:upward(.choice-entry-content)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*audition-debut.com"
       ]
     },
     "action":{
       "type":"css-display-none",
       "selector":"div[id^=contents1000] > div[id^=contents1000]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*biglobe.ne.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".prom > a.prom-all:upward(1)"
     }
   },
   {
@@ -17732,18 +17151,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".advertisement-list"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*kids.gakken.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".feed_item .pr_tag:upward(.feed_item)"
     }
   },
   {
@@ -17834,36 +17241,12 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*asajo.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"^.choice-entry-content .pr-icon:upward(.choice-entry-content)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*audition-debut.com"
       ]
     },
     "action":{
       "type":"css-display-none",
       "selector":"^div[id^=contents1000] > div[id^=contents1000]"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*biglobe.ne.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"^.prom > a.prom-all:upward(1)"
     }
   },
   {
@@ -17888,18 +17271,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"^.advertisement-list"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*kids.gakken.co.jp"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"^.feed_item .pr_tag:upward(.feed_item)"
     }
   },
   {
@@ -18495,20 +17866,6 @@
     "action":{
       "type":"css-display-none",
       "selector":"+js(set, isGGSurvey, true)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*ac-illust.com",
-        "*photo-ac.com",
-        "*silhouette-ac.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#eachDownloadedModal .ac-btn[href^=\"https://premium.\"]:upward(#eachDownloadedModal)"
     }
   },
   {
@@ -20160,18 +19517,6 @@
     "trigger":{
       "url-filter":".*",
       "if-domain":[
-        "*fistia.proj.tokyo"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":".v-alert.info a.white--text[href=\"/about\"]:upward(.info)"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
         "*fullxh.com",
         "*hamsterix.*",
         "*megaxh.com",
@@ -20468,18 +19813,6 @@
     "action":{
       "type":"css-display-none",
       "selector":".m-tickerArea"
-    }
-  },
-  {
-    "trigger":{
-      "url-filter":".*",
-      "if-domain":[
-        "*twitter.com"
-      ]
-    },
-    "action":{
-      "type":"css-display-none",
-      "selector":"#layers div[role=group][tabindex=0] div[data-testid=sheetDialog]:upward(div[role=group][tabindex=0])"
     }
   },
   {
