@@ -1,7 +1,7 @@
 ---
 layout: page-special
 about: Japanese Content Blocker for Safari
-subtitle: <a href="/"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
+subtitle: <a href="https://apps.apple.com/app/neko-blocker/id1590755519"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
 ---
 
 #### NekoBlocker は日本語サイト対応の Safari 用コンテンツブロッカーです
