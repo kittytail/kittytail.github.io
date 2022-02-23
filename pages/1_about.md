@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-subtitle: NekoBlocker について <a href="/"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
+subtitle: NekoBlocker について <a href="https://apps.apple.com/app/neko-blocker/id1590755519"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
 permalink: /about/
 tags: [Page]
 ---
