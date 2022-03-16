@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://nekoblocker.github.io"
+url: "https://www.kittytail.org"
 
 # THEME-SPECIFIC CONFIGURATION
 title: NekoBlocker                                      # site's title
