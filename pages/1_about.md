@@ -22,6 +22,10 @@ NekoBlocker は Safari のコンテンツブロッカーを利用することで
 
 世界で幅広く使われている[フィルタリングルール](#filters)を Safari のコンテンツブロッカーに対応させています
 
+さらにフィルタの定期的な更新に対応しています
+
+更新情報の取得は<a id="rss" href="/feed.xml" target="_blank">こちら <i class="fas fa-rss fa-x"></i></a> から
+
 <i class="fas fa-users fa-3x"></i>
 #### 完全日本語対応
 お問い合わせは[こちら](/report)から
