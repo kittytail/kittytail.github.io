@@ -79,6 +79,10 @@ img[align=right] {
   margin-left: 3%;
 }
 
+summary {
+  cursor: pointer;
+}
+
 /* ---- Responsive ---- */
 
 @media screen and (max-width: $break) {
@@ -238,24 +242,36 @@ kbd {
 .gist table tbody tr td {
   box-sizing: content-box;
 }
-
-// KaTeX math display
-.math-display {
-  display: inline-block;
+// Cookie consent
+#cookie-notice {
+  padding: 0.5rem 1rem;
+  display: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  background: rgba(2, 2, 2, 0.85);
+  color: lightgray;
+  z-index: 1000;
+
+  & a {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 0.6rem;
+  }
 }
 
 // Mermaid
 .mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
-}
 
-.mermaid > svg {
-  margin: auto;
-  display: block;
-  height: auto;
-  padding-bottom: 2em;
-  padding-top: 2em;
-  max-width: 100%;
+  & > svg {
+    margin: auto;
+    display: block;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    max-width: 100%;
+  }
 }

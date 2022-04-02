@@ -20,15 +20,10 @@
         color: var(--link);
       }
 
-      @media (prefers-color-scheme: dark) {
-        a {
-          color: var(--meta);
-        }
-      }
-
       a:hover {
-        color: var(--link);
-        filter: brightness(0.85);
+        .fa-circle {
+          filter: brightness(0.85);
+        }
       }
     }
   }
