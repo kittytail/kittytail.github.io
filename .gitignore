@@ -29,6 +29,10 @@ jekyll-theme-type-on-strap.gemspec
 **/node_modules/*
 **/package-lock.json
 
+# Nix
+/result
+/result-*
+
 # Misc
 *-test.md
 *copy.md
