@@ -242,7 +242,7 @@ Enable the [mermaid-js](https://github.com/mermaid-js/mermaid) diagram rendering
 This will load and init the [mermaid.min.js](https://mermaid-js.github.io/mermaid/getting-started/n00b-gettingStarted.html#4-calling-mermaid-from-a-relative-link).
 
 ```yml
-mermaid: true # to Enable it
+mermaid: default # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
 ```
 
 Find all the help you need on the official [mermaid documentation](https://mermaid-js.github.io/mermaid/).
@@ -613,4 +613,4 @@ remote_theme: sylhare/Type-on-Strap
 This theme is licensed under the [The MIT License (MIT)](/LICENSE)
 
 - Pictures from [Pexels](https://www.pexels.com/) are under Creative Commons Zero (CC0) license
-- Fonts are licensed under the [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) 
+- Fonts are licensed under the [SIL Open Font License (OFL)](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
