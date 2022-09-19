@@ -14,8 +14,16 @@
           jekyll
           jekyll-paginate
           jekyll-feed
+          jekyll-sass-converter
           jekyll-seo-tag
+          kramdown
           kramdown-parser-gfm
+          mercenary
+          rb-fsevent
+          rouge
+          sassc
+          terminal-table
+          unicode-display_width
         ]);
       in
       {
