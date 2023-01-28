@@ -100,6 +100,13 @@ NekoBlocker は VPN を利用した DNS によるコンテンツブロックな�
   </span>
 </a> Yuki2718/adblock
 
+<a href="https://github.com/Yuki2718/adblock2">
+  <span class="fa-stack fa-lg">
+    <i class="fas fa-circle fa-stack-2x"></i>
+    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+  </span>
+</a> Yuki2718/adblock2
+
 ### References
 
 * <a name="ref1"></a>[1]: Kiran Garimella, Orestis Kostakis, and Michael Mathioudakis. Ad-blocking: A study on performance, privacy and counter-measures. In Proceedings of the 2017 ACM on Web Science Conference, pages 259–262. ACM, 2017.
