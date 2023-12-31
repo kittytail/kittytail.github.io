@@ -2,29 +2,83 @@
 layout: default
 ---
 
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-
-  <header id="main" style="background-image: url('{{ page.feature-img | relative_url }}')">
+<article>
+  <header id="main">
     <div class="title-padder">
-      {% if page.hide_title %}
-        <div class="feature-image-padding"></div>
-      {% else %}
-        <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title"> {{ page.about }}</h1>
-        {% if page.subtitle %}
-        <h2 class="subtitle">{{ page.subtitle }}</h2>
-        {% endif %}
-      {% endif %}
+        <h1 class="title"> {{ page.about }}</h1>
+        <h4>
+        {{ page.app_desc }}
+        </h4>
+        <div class="bootstrap-iso">
+          <div class="container">
+            <div class="row justify-content-center">
+              {{ page.download_link }}
+            </div>
+            <div class="row justify-content-sm-center">
+              <a class="btn btn-outline-primary btn-lg px-4" href="usage">
+                <i class="fas fa-toggle-on"></i> 使い方
+              </a>
+              <div class="px-1">
+              </div>
+              <a class="btn btn-outline-dark btn-lg px-4" href="about">
+                <i class="fa fa-hand-point-right"></i> 詳しく
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
+    <hr></hr>
   </header>
 
   <section class="post-content">
   {% if page.bootstrap %}
   <div class="bootstrap-iso">
   {% endif %}
-	{{ content }}
+    <div class="container px-5 my-5">
+      <div class="row gx-5">
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h2 class="h4 fw-bolder">
+            <i class="fas fa-lock"></i>
+            Privacy
+          </h2>
+          <p>
+            <i class="fas fa-check"></i> Safari の拡張機能を活用<br>
+            <i class="fas fa-check"></i> アプリによるデータ収集なし<br>
+            <i class="fas fa-check"></i> トラッキングをブロック<br>
+          </p>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h2 class="h4 fw-bolder">
+            <i class="fas fa-shield-alt"></i>
+            Filter List
+          </h2>
+          <p>
+            <i class="fas fa-check"></i> 豊富なフィルタリングルール<br>
+            <i class="fas fa-check"></i> 定期的な<a href="https://github.com/kittytail/BlockerRules/commits/master">ルールの更新</a>に対応<br>
+            <i class="fas fa-check"></i> 日本語用フィルタもサポート<br>
+          </p>
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h2 class="h4 fw-bolder">
+            <i class="fas fa-yen-sign"></i>
+            Price
+          </h2>
+          <p>
+            <i class="fas fa-check"></i> ライフタイムプランをサポート<br>
+            <i class="fas fa-check"></i> 追加課金なし<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% include install.liquid %}
+
+    {% include license.liquid %}
+
+  {{ content }}
   {% if page.bootstrap %}
   </div>
   {% endif %}
   </section>
-
 </article>
+

@@ -1,9 +1,11 @@
 ---
 layout: page
 title: About
-subtitle: NekoBlocker について <a href="https://apps.apple.com/app/neko-blocker/id1590755519"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
+subtitle: NekoBlocker について
+subsubtitle: <a href="https://apps.apple.com/app/neko-blocker/id1590755519"><img src="/assets/img/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg" /></a>
 permalink: /about/
 tags: [Page]
+bootstrap: true
 ---
 
 #### NekoBlocker は日本語サイト対応の Safari 用コンテンツブロッカーです
@@ -72,40 +74,7 @@ NekoBlocker は VPN を利用した DNS によるコンテンツブロックな�
 * iOS: 15.0 以降
 * macOS: TBD
 
-## ライセンス
-
-フィルタのライセンスは [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) で公開しています。
-
-<a href="https://github.com/nekoblocker/BlockerRules">
-  <span class="fa-stack fa-lg">
-    <i class="fas fa-circle fa-stack-2x"></i>
-    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-  </span>
-</a> NekoBlocker で利用しているルール
-
-### <a name="filters"></a>改変元のルール
-
-<a href="https://easylist.to/pages/about.html">
-  <span class="fa-stack fa-lg">
-    <i class="fas fa-circle fa-stack-2x"></i>
-    <i class="fas fa-file fa-stack-1x fa-inverse"></i>
-  </span>
-</a> EasyList
-
-
-<a href="https://github.com/Yuki2718/adblock">
-  <span class="fa-stack fa-lg">
-    <i class="fas fa-circle fa-stack-2x"></i>
-    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-  </span>
-</a> Yuki2718/adblock
-
-<a href="https://github.com/Yuki2718/adblock2">
-  <span class="fa-stack fa-lg">
-    <i class="fas fa-circle fa-stack-2x"></i>
-    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-  </span>
-</a> Yuki2718/adblock2
+{% include license.liquid %}
 
 ### References
 

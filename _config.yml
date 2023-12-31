@@ -25,7 +25,7 @@ color_image: /assets/img/lineart.png                    # A bit transparent for 
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true                                             # Enable if using math markup
 mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
-color_theme: auto                                       # auto, dark or light
+color_theme: light                                       # auto, dark or light
 
 # Comments
 comments:
