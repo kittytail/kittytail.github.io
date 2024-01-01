@@ -51,7 +51,20 @@ collections:
 sass:
   style: compressed
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*"]
+exclude:
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - ".idea"
+  - "vendor/*"
+  - "assets/node_modules"
+  - "/.envrc"
+  - "/.direnv"
+  - "/Gemfile.lock"
+  - "/gemset.nix"
+  - "/flake.nix"
+  - "/flake.lock"
+  - "/result"
+  - "/result-*"
 
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github

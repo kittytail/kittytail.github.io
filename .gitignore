@@ -20,14 +20,17 @@ _development_tool/*
 */.jekyll-cache/*
 
 # Theme Gem
-Gemfile.lock
 *.gem
 .gems
 jekyll-theme-type-on-strap.gemspec
 
 # Node.js
 **/node_modules/*
-**/package-lock.json
+
+# Nix
+/.direnv
+/result
+/result-*
 
 # Misc
 *-test.md
