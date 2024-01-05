@@ -1,0 +1,13 @@
+steps:
+  - title: "1. NekoBlocker を起動する"
+    image: /assets/img/usage/update-app.png
+  - title: "2. 最新のルールをダウンロードする"
+    image: /assets/img/usage/update-download.png
+  - title: "3. ダウンロード完了を待つ"
+    image: /assets/img/usage/update-download-complete.png
+  - title: "4. 新しいルールを適用する"
+    image: /assets/img/usage/update-update.png
+  - title: "5. ルール適用完了まで待ちます (時間がかかります)"
+    image: /assets/img/usage/update-update-complete.png
+  - title: "6. 完了です！"
+    image: /assets/img/usage/update-complete.png

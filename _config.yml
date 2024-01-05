@@ -1,0 +1,32 @@
+baseurl: ""
+url: "https://www.kittytail.org"
+
+title: NekoBlocker
+description: "NekoBlocker 公式ホームページ"
+avatar: assets/img/neko-blocker-icon-180x180.png
+favicon: ""
+
+header_text: 最新ニュース
+header_feature_image: ""
+header_feature_image_responsive: true
+
+paginate: 5
+paginate_path: "/news/page:num"
+
+katex: false
+color_theme: light
+
+collections:
+  portfolio:
+    output: false
+
+exclude:
+  - .*
+  - .direnv/
+  - flake.*
+  - result
+  - result-*
+  - assets/node_modules
+
+theme: type-on-strap
+remote_theme: kittytail/kittytail.github.io@themes/type-on-strap

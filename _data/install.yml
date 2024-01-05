@@ -1,0 +1,19 @@
+steps:
+  - title: "1. Tap Settings"
+    description: 設定を選ぶ
+    image: /assets/img/usage/0.png
+  - title: "2. Tap Safari"
+    description: Safari を選ぶ
+    image: /assets/img/usage/1.png
+  - title: "3. Tap Extensions"
+    description: 拡張機能を選択
+    image: /assets/img/usage/2.png
+  - title: "4. Tap NekoBlocker"
+    description: NekoBlocker を選択する
+    image: /assets/img/usage/3.png
+  - title: "5. Allow NekoBlocker"
+    description: NekoBlocker を許可する
+    image: /assets/img/usage/4.png
+  - title: "6. Finish"
+    description: 完了です！
+    image: /assets/img/usage/5.png
