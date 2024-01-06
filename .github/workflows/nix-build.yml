@@ -1,0 +1,28 @@
+name: Build the theme and demo pages
+
+on:
+  pull_request:
+    branches: [theme/type-on-strap]
+
+  workflow_dispatch:
+
+jobs:
+  build-theme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v24
+      - uses: DeterminateSystems/magic-nix-cache-action@v2
+      - name: Build the theme
+        run: nix --print-build-logs build
+
+  build-demo-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v24
+      - uses: DeterminateSystems/magic-nix-cache-action@v2
+      - name: Build the demo website
+        run: nix --print-build-logs build .#demo -o _site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
