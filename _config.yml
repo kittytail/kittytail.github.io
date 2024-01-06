@@ -29,4 +29,3 @@ exclude:
   - assets/node_modules
 
 theme: type-on-strap
-remote_theme: kittytail/kittytail.github.io@themes/type-on-strap
