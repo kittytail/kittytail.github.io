@@ -249,25 +249,6 @@ details {
   }
 }
 
-// Cookie consent
-#cookie-notice {
-  padding: 0.5rem 1rem;
-  display: none;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: rgba(2, 2, 2, 0.85);
-  color: lightgray;
-  z-index: 1000;
-
-  & a {
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 0.6rem;
-  }
-}
-
 // Mermaid
 .mermaid {
   background-color: rgba(255, 255, 255, 0.9);

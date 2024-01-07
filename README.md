@@ -169,14 +169,7 @@ By default, it is in English, but you can easily add your own language.
 
 ### Google Analytics
 
-To enable Google Analytics (GA4), add your [Measurement ID](https://support.google.com/analytics/answer/12270356?hl=en&sjid=1593376271608310401-NA) 
-to `_config.yml` like so:
-
-```yml
-google_analytics: G-XXXXXXXXXX
-```
-
-It will use the [Google Tag Manager](https://support.google.com/analytics/answer/10220869?hl=en&ref_topic=9355633&sjid=1593376271608310401-NA)
+This feature is removed in Kittytail's fork.
 
 ### Comments 💬
 
@@ -280,9 +273,7 @@ They will redirect the user on your profile on to other platforms like Twitter, 
 
 ### Cookie consent
 
-You can add a cookie consent with a disclaimer if you use Google Analytics while respecting the [GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation).
-Set to true, there will be a banner at the bottom of the page with the disclaimer, and an _approve_ button.
-Once the user clicks on "Approve" the cookies will be created for Google Analytics.
+This feature is removed in Kittytail's fork. We don't use cookies.
 
 #### Share in article
 
