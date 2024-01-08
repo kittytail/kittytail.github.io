@@ -26,7 +26,9 @@ NekoBlocker は Safari のコンテンツブロッカーを利用することで
 
 さらにフィルタの定期的な更新に対応しています
 
-更新情報の取得は<a id="rss" href="/feed.xml" target="_blank">こちら <i class="fas fa-rss fa-x"></i></a> から
+更新情報の取得は
+<a href="{{ site.data.social.feed.path | relative_url }}" target="_blank">こちら
+<i class="fas fa-rss"></i></a> から
 
 <i class="fas fa-users fa-3x"></i>
 #### 完全日本語対応
@@ -34,11 +36,11 @@ NekoBlocker は Safari のコンテンツブロッカーを利用することで
 
 ## 使い方
 
-<i class="fas fa-cogs fa-x"></i>
+<i class="fas fa-cogs"></i>
 __設定__ から
-<i class="fab fa-safari fa-x"></i>
+<i class="fab fa-safari"></i>
 __Safari__ を選んで、
-<i class="fas fa-puzzle-piece fa-x"></i>
+<i class="fas fa-puzzle-piece"></i>
 __拡張機能__ をタップすると NekoBlocker を設定することができます
 
 詳しい使い方は[__こちら__](/usage)
