@@ -2,7 +2,7 @@
 layout: post
 title: ルールを更新しました (02-04-2022)
 date: 2022-04-02 00:00:00 +0900
-tags: [news, app, filter_update]
+tags: [filter_update]
 ---
 
 フィルタのルールを更新しました。
