@@ -30,10 +30,15 @@
             name = "kittytail-website";
             src = ./.;
             nativeBuildInputs = [ gems ];
+
             buildPhase = ''
-              JEKYLL_ENV=production jekyll build -d $out
+              jekyll build -d $out
             '';
+
+            JEKYLL_ENV = "production";
+
             dontInstall = true;
+            dontFixup = true;
           };
 
           apps.default.program = "${pkgs.writers.writeBash "serve" ''
