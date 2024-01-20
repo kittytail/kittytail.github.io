@@ -1,0 +1,28 @@
+# Jekyll dev or build
+_site/*
+_development_tool/*
+.sass-cache/*
+*.css.map
+*.scssc
+.bundle/*
+/vendor/
+.jekyll-cache/*
+*/.jekyll-cache/*
+
+# Theme Gem
+*.gem
+.gems
+jekyll-theme-type-on-strap.gemspec
+
+# Node.js
+**/node_modules/*
+**/package-lock.json
+
+# Nix
+/result
+/result-*
+
+# Misc
+*-test.md
+*copy.md
+test/*

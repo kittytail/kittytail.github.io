@@ -1,0 +1,23 @@
+<h1 class="title">{{ page.title }}</h1>
+{% if page.subtitle %}<h4>{{ page.subtitle }}</h4>{% endif %}
+<div class="bootstrap-iso">
+  <div class="container">
+    <div class="row justify-content-center">
+      <a class="col-lg" href="{{ site.data.appstore.url }}">
+        <img src="{{ site.data.appstore.button | relative_url }}"/>
+      </a>
+    </div>
+    {% if page.url == "/" %}
+    <div class="row justify-content-sm-center">
+      <a class="btn btn-outline-primary btn-lg px-4" href="usage">
+        <i class="fas fa-toggle-on"></i> 使い方
+      </a>
+      <div class="px-1">
+      </div>
+      <a class="btn btn-outline-dark btn-lg px-4" href="about">
+        <i class="fa fa-hand-point-right"></i> 詳しく
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</div>
